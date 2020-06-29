@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80deea"
+    android:orientation="vertical"
+    tools:context=".Begin">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:backgroundTintMode="add"
+        android:src="@drawable/EA" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        tools:src="@drawable/logo1" />
+
+    <EditText
+        android:id="@+id/edLogin"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Informe seu CPF"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Informe sua Data de Nascimento"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edLogin2"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Informe sua Renda Mensal"
+        android:inputType="text" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edLogin2"
+        app:cardBackgroundColor="#c2185b"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="Acessar" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
